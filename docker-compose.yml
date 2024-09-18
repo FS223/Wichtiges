@@ -1,0 +1,8 @@
+services:
+  doniel-service:
+    context: .
+    dockerfile: Dockerfile
+    ports:
+      - 8088:80
+    networks:
+    - nginxproxymanager_default
