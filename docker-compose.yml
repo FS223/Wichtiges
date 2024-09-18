@@ -1,6 +1,6 @@
 services:
   doniel-service:
-    context: .
+    build: .
     dockerfile: Dockerfile
     ports:
       - 8088:80
