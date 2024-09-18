@@ -13,12 +13,6 @@ pipeline {
             }
         }
 
-        stage('Shutdown existing containers') {
-            steps {
-                sh 'docker compose down'
-            }
-        }
-
         stage('Build Docker Images') {
             steps {
                 sh 'docker compose build'
